@@ -1,0 +1,16 @@
+﻿@model Corporate.Models.PaymentViewModel
+@{
+    ViewBag.Title = "Confirm Donation";
+}
+
+<h2>Confirm Donation</h2>
+
+DonationID = @Html.DisplayFor(model => model.DonationID)<br />
+Donation Amount = @Html.DisplayFor(model => model.Donation.Amount)<br /><br />
+
+DonorID = @Html.DisplayFor(model => model.DonorID)<br />
+Donor First = @Html.DisplayFor(model => model.Donor.FirstName)<br />
+Donor Last = @Html.DisplayFor(model => model.Donor.LastName)<br /><br />
+
+@Html.ActionLink("Pay Direct With Credit Card", "PaymentWithCreditCard", "Paypal")
+@Html.ActionLink("Pay with Paypal Account", "PaymentWithPaypal", "Paypal")

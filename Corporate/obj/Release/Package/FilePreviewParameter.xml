@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="CorporateTest" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^d:\\Documents\\Visual\ Studio\ 2015\\Projects\\Corporate\\Corporate\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^d:\\Documents\\Visual\ Studio\ 2015\\Projects\\Corporate\\Corporate\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="CorporateContext-Web.config Connection String" description="" value="Data Source=(localdb)\MSSQLLocalDB; Initial Catalog=CorporateContext-20160302164539; Integrated Security=True; MultipleActiveResultSets=True; AttachDbFilename=|DataDirectory|CorporateContext-20160302164539.mdf" tags="">
+    <parameterEntry kind="XmlFile" scope="d:\\Documents\\Visual\ Studio\ 2015\\Projects\\Corporate\\Corporate\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='CorporateContext']/@connectionString" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="" value="DefaultConnection_ConnectionString" tags="">
+    <parameterEntry kind="XmlFile" scope="d:\\Documents\\Visual\ Studio\ 2015\\Projects\\Corporate\\Corporate\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+</parameters>
